@@ -21,6 +21,6 @@
 #define EXECUTE(callback) \
     callback();
 
-#define FUNCTION auto
+#define function auto
 
 #define END return 0;

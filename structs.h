@@ -52,7 +52,7 @@ enum class Images {
 };
 
 struct Asset {
-    str path = nullptr;
+    str path = "";
 };
 
 struct Square {
@@ -73,10 +73,8 @@ struct Material {
     int tileY = 1;
     int tileZ = 1;
 
-    union {
-        Asset material;
-        Color clr;
-    };
+    Asset material;
+    Color clr;
 };
 
 struct GameObject2D {
